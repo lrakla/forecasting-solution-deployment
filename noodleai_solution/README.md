@@ -18,3 +18,41 @@ python main.py --store 1 --dept 2
 ```
 
 Repository structure
+```
+└── noodleai_solution/
+    ├── data/
+    │   ├── encoded/
+    │   │   └── encoded.csv
+    │   ├── forecasts/
+    │   │   └── forecasts.csv
+    │   ├── processed/
+    │   │   └── processed.csv
+    │   └── raw/
+    │       └── data.csv
+    ├── notebooks/
+    │   ├── eda1.ipynb
+    │   ├── eda2.ipynb
+    │   ├── hyperparameter.ipynb
+    │   └── deepar.py
+    ├── report/
+    │   ├── figures/
+    │   └── results.ipynb
+    ├── src/
+    │   ├── data/
+    │   │   ├── process_dataset.py
+    │   │   └── split_dataset.py
+    │   ├── features/
+    │   │   └── create_features.py
+    │   ├── models/
+    │   │   └── ml_models.py
+    │   ├── visualizations/
+    │   │   └── visualize.py
+    │   ├── train.py
+    │   ├── evaluate.py
+    │   ├── CONFIG.yaml
+    │   └── models_config.yaml
+    ├── requirements.txt
+    ├── Dockerfile
+    ├── main.py
+    └── README.md
+```
