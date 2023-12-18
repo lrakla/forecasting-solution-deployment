@@ -16,6 +16,7 @@ Optionally, you can give --store <store-number> --dept <dept-number> to get fore
 ```python
 python main.py --store 1 --dept 2
 ```
+The final write-up is in [noodleai_solution/reports/results.pdf](https://github.com/lrakla/noodleai-take-home/blob/2e2badbd6de4782ebab04bbad92f0578f6787baa/noodleai_solution/reports/results.pdf)
 
 Repository structure
 ```
@@ -37,6 +38,7 @@ Repository structure
     ├── report/
     │   ├── figures/
     │   └── results.ipynb
+    │   └── results.pdf
     ├── src/
     │   ├── data/
     │   │   ├── process_dataset.py
