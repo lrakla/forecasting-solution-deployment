@@ -1,0 +1,49 @@
+filepaths:
+  input_filepath: 'data/raw/data.csv'
+  processed_filepath: 'data/processed/processed.csv'
+  encoded_filepath: 'data/encoded/encoded.csv'
+  results_filepath : 'data/forecasts/forecasts.csv'
+  
+# commented columns are not used for final model
+features:
+  - 'Store'
+  - 'Dept'
+  - 'IsHoliday'
+  - 'Size'
+  - 'Week'
+  - 'Type'
+  - 'Year'
+  - 'Month'
+  - 'CPI'
+  - 'Unemployment'
+  # - 'Temperature'
+  # - 'Fuel_Price'
+  - 'MarkDown1'
+  # - 'MarkDown2'
+  # - 'MarkDown3'
+  # - 'MarkDown4' # Not used as higly correlated with MarkDown1
+  - 'MarkDown5'
+cat_vars:
+  - "IsHoliday"
+  - "Type"
+  - "Store"
+  - "Dept"
+
+num_vars:
+  - "Size"
+  # - "Temperature"
+  # - "Fuel_Price"
+  - "CPI"
+  - "Unemployment"
+  - "MarkDown1"
+  # - "MarkDown2"
+  # - "MarkDown3"
+  # - "MarkDown4"
+  - "MarkDown5"
+
+lags : 0
+transform_target : True
+actual_col : 'Weekly_Sales'
+target_col : 'Weekly_Sales_transformed'
+train_split_date : '2012-10-05' # last date of train data
+forecast_create_date : '2012-10-26' # last date of forecast data
