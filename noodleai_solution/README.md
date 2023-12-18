@@ -3,21 +3,18 @@ Time-Series-Sales-Forecasting
 
 To get started - 
 1. Clone this repository
-2. Run the following command
-'''python
+3. Run the following commands sequentially
+```bash
+cd noodleai_solution
 docker build -t noodleai_solution .
-docker run -d noodleai_solution
-'''
+docker run -d -it noodleai_solution bash
+docker ps # to indentify container id
+docker exec -it <container-id> bash
+python main.py
+```
+Optionally, you can give --store <store-number> --dept <dept-number> to get forecasts for a particular date
+```python
+python main.py --store 1 --dept 2
+```
 
-
-import yaml
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import statsmodels.api as sm
-import matplotlib.pyplot as plt
-import warnings
-warnings.filterwarnings('ignore')
-import matplotlib.pyplot as plt
-import sklearn
-import xgboost as xgb
+Repository structure
