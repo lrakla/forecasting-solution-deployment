@@ -5,9 +5,9 @@ To get started -
 1. Clone this repository
 3. Run the following commands sequentially
 ```bash
-cd noodleai_solution
-docker build -t noodleai_solution .
-docker run -d -it noodleai_solution bash
+cd <solution_folder>
+docker build -t ml_solution .
+docker run -d -it ml_solution bash
 docker ps # to indentify container id
 docker exec -it <container-id> bash
 python main.py
@@ -16,11 +16,10 @@ Optionally, you can give --store <store-number> --dept <dept-number> to get fore
 ```python
 python main.py --store 1 --dept 2
 ```
-The final write-up is in [noodleai_solution/reports/results.pdf](https://github.com/lrakla/noodleai-take-home/blob/2e2badbd6de4782ebab04bbad92f0578f6787baa/noodleai_solution/reports/results.pdf)
 
 Repository structure
 ```
-└── noodleai_solution/
+└── <solution_folder>/
     ├── data/
     │   ├── encoded/
     │   │   └── encoded.csv
